@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.display_requests.DisplayRequestsFragment">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/districtFilterRequest"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/custom_edittext"
+                android:focusedByDefault="true"
+                android:textAllCaps="true"
+                android:imeOptions="actionDone"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="#5C5C5C"
+                app:queryHint="Search district"
+                android:textSize="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/requestList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnAddRequest"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:backgroundTint="@color/black"
+            android:text="Request Blood"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

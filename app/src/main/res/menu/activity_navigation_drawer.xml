@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_display_requests"
+            android:icon="@drawable/blood_request_icon"
+            android:title="@string/menu_display_requests" />
+        <item
+            android:id="@+id/nav_display_donors"
+            android:icon="@drawable/display_donors_icon"
+            android:title="@string/menu_display_donors" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/change_password_icon"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Log out" />
+    </group>
+</menu>
